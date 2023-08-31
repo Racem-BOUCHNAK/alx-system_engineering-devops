@@ -1,2 +1,2 @@
 #!/bin/bash
-file="hello"; current_owner=$(stat -c %U "$file"); if [ "$current_owner" = "guillaume" ]; then sudo chown betty "$file"; fi
+chown --from=guillaume betty hello
